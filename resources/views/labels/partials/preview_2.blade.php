@@ -19,7 +19,7 @@
 
 					{{-- Product Name --}}
 					@if(!empty($print['name']))
-						<span style="display: block !important; font-size: {{$print['name_size']}}px">
+						<span style=" font-size: {{$print['name_size']}}px">
 							{{$page_product->product_actual_name}}
 
 							@if(!empty($print['lot_number']) && !empty($page_product->lot_number))

@@ -1,3 +1,4 @@
+// updated
 @extends('layouts.app')
 
 @section('title', __('sale.pos_sale'))

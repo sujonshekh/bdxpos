@@ -46,6 +46,4 @@ mkdir -p storage/framework/cache storage/framework/views storage/framework/sessi
 ```
 
 ## Step 10: Visit the application
-```bash
-   http://localhost:8000
-```
+You could start over here: http://localhost:8000

@@ -1,17 +1,51 @@
-nullcave.club
+# Installation
 
-## About Ultimate POS to Modify bdxpos
+### Step 1: Create required directories for laravel framework
+```bash
+mkdir -p storage/framework/cache storage/framework/views storage/framework/sessions storage/framework/testing
+```
 
-Ultimate POS is a POS application by [Ultimate Fosters](http://ultimatefosters.com), a brand of [The Web Fosters](http://thewebfosters.com).
+### Step 2: Install composer dependencies
+```bash
+   composer install
+```
 
-## Installation & Documentation
-You will find installation guide and documentation in the downloaded zip file.
-Also, For complete updated documentation of the ultimate pos please visit online [documentation guide](http://ultimatefosters.com/ultimate-pos/).
+### Step 3: Create .env file
+```bash
+   cp .env.example .env
+```
 
-## Security Vulnerabilities
+### Step 4: Generate Keys (this will update you .env file)
+```bash
+   php artisan key:generate
+```
 
-If you discover a security vulnerability within ultimate POS, please send an e-mail to support at thewebfosters@gmail.com. All security vulnerabilities will be promptly addressed.
+### Step 5: Migrate database
+```bash
+   php artisan migrate
+```
 
-## License
+### Step 6: Seed database
+```bash
+   php artisan db:seed
+```
 
-The Ultimate POS software is licensed under the [Codecanyon license](https://codecanyon.net/licenses/standard).
+### Step 7: Install dependencies for frontend
+```bash
+   npm install
+```
+
+### Step 8: Build frontend
+```bash
+   npm run dev
+```
+
+### Step 9: Run the application
+```bash
+   php artisan serve
+```
+
+## Step 10: Visit the application
+```bash
+   http://localhost:8000
+```

@@ -10,7 +10,7 @@ mkdir -p storage/framework/cache storage/framework/views storage/framework/sessi
    composer install
 ```
 
-### Step 3: Create .env file
+### Step 3: Create .env file and customize it (use your favorite text editor
 ```bash
    cp .env.example .env
 ```
